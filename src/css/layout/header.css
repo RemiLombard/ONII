@@ -1,0 +1,45 @@
+.header{
+    background-color: var(--background-color1);
+    border-bottom: var(--white-color) solid 1px;
+}
+
+.header__elements{
+    display: flex;
+    align-items: center;
+}
+
+.header__elements--btn{
+
+}
+
+.header__elements--logo{
+    width: 122px;
+    height: 74px;
+}
+
+.header__elements--btn1{
+    text-decoration: none;
+    background-color: none;
+    color: var(--white-color);
+    text-align: center;
+    font-family: var(--font-family2);
+    font-size: 20px;
+    padding: 15px 20px; 
+    border: 1px solid var(--white-color);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.header__elements--btn2{
+    text-decoration: none;
+    background-color: var(--purple-color);
+    color: var(--white-color);
+    text-align: center;
+    font-family: var(--font-family2);
+    font-size: 20px;
+    padding: 15px 37px; 
+    border-radius: 15px;
+    cursor: pointer;
+    width: 171px;
+}
+

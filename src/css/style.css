@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "/src/css/utils/variable.css";
+
+@import "/src/css/base/main.css";
+@import "/src/css/base/media.css";
+
+@import "/src/css/layout/header.css";
+@import "/src/css/layout/footer.css";
+
+@import "/src/css/components/landingpage.css";
+
