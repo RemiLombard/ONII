@@ -5,12 +5,6 @@
     box-sizing: border-box;
 }
 
-h1{
-    font-weight:900;
-    font-family: var(--font-family);
-    font-size: var(--heading-1);
-    color: var(--white-color);
-    letter-spacing: 1.5px;
-    line-height: 1.5;
-    text-transform: uppercase;
+main{
 }
+
