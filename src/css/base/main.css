@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
-main{
+strong{
+    font-weight: normal;
 }
 
