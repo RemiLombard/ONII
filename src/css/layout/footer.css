@@ -25,6 +25,7 @@
     text-decoration:none;
     position: relative;
     z-index: 2;
+    width: 150px;
 }
 
 .footer__mail:hover {
@@ -35,6 +36,7 @@
     text-decoration:none;
     position: relative;
     z-index: 2;
+    width: 150px;
 }
 
 .footer__logo {
