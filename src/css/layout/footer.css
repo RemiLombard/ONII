@@ -1,0 +1,77 @@
+.footer {
+    
+    position: relative;
+    background-color: var(--background-color1);
+    margin-top: -120px;
+    padding-top: 200px;
+    padding-bottom: 30px;
+}
+
+.footer__deco{
+    position: absolute;
+}
+
+.footer__content{
+    display: grid; /* Change from flex to grid */
+    grid-template-columns: 1fr 1fr 1fr; /* Create three equal columns */
+    align-items: center; /* Center items vertically */
+}
+
+.footer__mail {
+    font-family: var(--font-family2);
+    font-size: 16px;
+    margin-left: 50px;
+    color: var(--white-color);
+    text-decoration:none;
+    position: relative;
+    z-index: 2;
+}
+
+.footer__mail:hover {
+    font-family: var(--font-family2);
+    font-size: 16px;
+    margin-left: 50px;
+    color: var(--yellow-color);
+    text-decoration:none;
+    position: relative;
+    z-index: 2;
+}
+
+.footer__logo {
+    z-index: 2;
+    grid-column: 2; /* Place in the second column */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.footer__mentions{
+    z-index: 2;
+    grid-column: 3; /* Place in the third column */
+    justify-self: end; /* Ajoutez cette ligne */
+    margin-right: 50px;
+}
+
+.footer__mentions--content{
+    font-family: var(--font-family2);
+    font-size: 16px;
+    margin-left: 10px;
+    color: var(--white-color);
+    text-decoration:none;
+    position: relative;
+    z-index: 2;
+    text-align: right; /* Ajoutez cette ligne */
+}
+
+.footer__mentions--content:hover{
+    font-family: var(--font-family2);
+    font-size: 16px;
+    margin-left: 10px;
+    color: var(--yellow-color);
+    text-decoration:none;
+    position: relative;
+    z-index: 2;
+    text-align: right; /* Ajoutez cette ligne */
+}

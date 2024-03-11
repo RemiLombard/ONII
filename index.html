@@ -17,6 +17,9 @@
                 <img src="public/icons/logo_onii.svg" class="header__elements--logo" alt="logo onii">
             </a>
             <div class="header__elements--btn">
+                <a href="#fonctionnalité" class="header__elements--btn3">Fonctionnalités</a>
+                <a href="#FAQ" class="header__elements--btn4">FAQ</a>
+                <a href="#contact" class="header__elements--btn5">Contact</a>
                 <a href="/" class="header__elements--btn1">Se connecter</a>
                 <a href="/" class="header__elements--btn2">S'inscrire</a>
             </div>
@@ -51,44 +54,44 @@
                 <img src="/public/icons/phone_mockup.svg" class="principal__maquette" alt="maquette telephone">
             </div>
         </section>
-        <section class="second_section">
+        <section class="second_section" id="fonctionnalité">
             <h3 class="firstsubtitle">Avec ONII, vous pourrez...</h3>
             <div class="card__container">
                 <div class="card">
                     <div><img src="/public/icons/journal.svg" class="card__icone" alt="icone journal"></div>
                     <div class="card__texte">
-                        <h4 class="card__texte--titre"><span>Enregistrer</span> vos rêves pour vous même grâce au journal de bord</h3>
+                        <h4 class="card__texte--titre"><span>Enregistrer</span> vos rêves pour vous même grâce au journal de bord</h4>
                         <p class="card__texte--description">Ne laissez plus les rêves que vous vivez chaque nuit s’évanouir dans l’oubli en les archivant dans votre journal personnel, afin de capturer l’essence de votre subconscient</p>
                     </div>
                 </div>
                 <div class="card">
                     <div><img src="/public/icons/commu.svg" class="card__icone" alt="icone communauté"></div>
                     <div class="card__texte">
-                        <h4 class="card__texte--titre"><span>Partager</span> vos rêves avec notre communauté de rêveurs</h3>
+                        <h4 class="card__texte--titre"><span>Partager</span> vos rêves avec notre communauté de rêveurs</h4>
                         <p class="card__texte--description">Racontez vos rêves les plus fascinants et laissez les autres utilisateurs s’émerveiller devant la richesse et la diversité de vos expériences oniriques</p>
                     </div>
                 </div>
                 <div class="card">
                     <div><img src="/public/icons/ia.svg" class="card__icone" alt="icone ia"></div>
                     <div class="card__texte">
-                        <h4 class="card__texte--titre"><span>Comprendre</span> vos rêves grâce à l’intelligence artificielle</h3>
+                        <h4 class="card__texte--titre"><span>Comprendre</span> vos rêves grâce à l’intelligence artificielle</h4>
                         <p class="card__texte--description">Arrêtez de vous interroger sur les motifs qui sous-tendent vos rêves et confiez plutôt leur analyse à une intelligence artificielle qui vous éclairera sur leur signification</p>
                     </div>
                 </div>
                 <div class="card">
                     <div><img src="/public/icons/fun.svg" class="card__icone" alt="icone fun"></div>
                     <div class="card__texte">
-                        <h4 class="card__texte--titre"><span>Vous divertir</span> en découvrant les rêves des autres utilisateurs</h3>
+                        <h4 class="card__texte--titre"><span>Vous divertir</span> en découvrant les rêves des autres utilisateurs</h4>
                         <p class="card__texte--description">Ne vous vous ennuyez plus jamais en lisant, likant et commentant les rêves de notre communauté sur un feed personnalisé pour et par vous</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="third_section">
+        <section class="third_section" id="FAQ">
             <h3 class="secondsubtitle">Foire aux questions</h3>
             
             <div class="carrousel" x-data="{hrefCourant: '#image-1',}">
-                <button @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--avant" aria-label="slide précedant"><</button><button @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--apres" aria-label="slide suivant">></button>
+                <button @click ="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--avant" aria-label="slide précedant">&lt;</button><button @click ="$refs.parent.scrollLeft += $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--apres" aria-label="slide suivant">></button>
                 <div class="carrousel__parent--content" x-ref="parent">
                     
                     <div id="image-1" class="carrousel__content">
@@ -144,11 +147,61 @@
                 </div>   
             </div>
         </section>
+
+        <section class="fourth_section" id="contact">
+            <div class="deco2">
+                <img src="/public/icons/Lune.svg" class="deco2__lune" alt="deco">
+                <img src="/public/icons/Etoile.svg" class="deco2__etoile" alt="deco">
+                <img src="/public/icons/Etoile-1.svg" class="deco2__etoile2" alt="deco">
+                <img src="/public/icons/Etoile-2.svg" class="deco2__etoile3" alt="deco">
+                <img src="/public/icons/Etoile-2.svg" class="deco2__etoile5" alt="deco">
+                <img src="/public/icons/Etoile-3.svg" class="deco2__etoile4" alt="deco">
+                <img src="/public/icons/Nuage.svg" class="deco2__nuage" alt="deco">
+                <img src="/public/icons/Nuage-1.svg" class="deco2__nuage2" alt="deco">
+            </div>
+            <h3 class="contact__text">Si vous souhaiter nous contacter, n’hésitez pas à nous envoyer un message !</h3>
+            <div class="contact">
+                <form action="#">
+                    <div class="contact__contenu">
+                        <label class="contact__contenu--texte" for="nom">Prénom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Votre prénom">
+                    </div>
+                    <div class="contact__contenu">
+                        <label class="contact__contenu--texte" for="prenom">Nom</label>
+                        <input type="text" id="prenom" name="prenom" placeholder="Votre nom">
+                    </div>
+                    <div class="contact__contenu">
+                        <label class="contact__contenu--texte" for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Votre adresse Email">
+                    </div>
+                    <div class="contact__contenu">
+                        <label class="contact__contenu--texte" for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message"></textarea>
+                    </div>
+                </form>
+                <a href="/" class="contact__btn">Envoyer</a>
+            </div>
+            
+        </section>
         
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        
+        <div class="footer__content">
+            <a href="/" class="footer__mail">contact@onii.fr</a>
+            <div class="footer__logo">
+                <img src="/public/icons/instagram.svg" alt="logo insta">
+                <img src="/public/icons/tiktok.svg" alt="logo tiktok">
+                <img src="/public/icons/facebook.svg" alt="logo facebook">
+            </div>
+            <div class="footer__mentions">
+                <a href="/" class="footer__mentions--content">À propos</a>
+                <a href="/" class="footer__mentions--content">CGU</a>
+                <a href="/" class="footer__mentions--content">NDA</a>
+                <a href="/" class="footer__mentions--content">RGPD</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

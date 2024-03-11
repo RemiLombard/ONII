@@ -1,6 +1,7 @@
 .first_section {
+    margin-top: 84px;
     position: relative;
-    z-index: 3;
+    z-index: 5;
     background-color: var(--background-color1);
     height: 650px;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
@@ -70,6 +71,19 @@ textarea {
     margin-left: 10px;
 }
 
+.principal__titre--cta--btn:hover{
+    text-decoration: none;
+    background-color: var(--yellow-color);
+    color: var(--black-color);
+    text-align: center;
+    font-family: var(--font-family2);
+    font-size: 16px;
+    padding: 10px 32px; 
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
 .principal__maquette{
     height: 500px;
     margin-left: 50px;
@@ -84,6 +98,7 @@ textarea {
     top: 20px;
     left: 100px;
     z-index: -2;
+    width: 70px;
 }
 
 .deco__nuage {
@@ -91,23 +106,26 @@ textarea {
     top: 50px;
     left: 150px;
     z-index: -1;
+    width: 100px;
 }
 
-.deco__nuage2 {
+.deco__etoile2 {
     position: absolute;
     top: 30px;
-    left: 750px;
+    left: 880px;
     z-index: -1;
+    width: 30px;
 }
 
 .deco__etoile {
     position: absolute;
-    top: 40px;
+    top: 60px;
     left: 450px;
     z-index: -1;
+    width: 40px;
 }
 
-.deco__etoile2 {
+.deco__etoile5 {
     position: absolute;
     top: 350px;
     left: 1400px;
@@ -117,7 +135,7 @@ textarea {
 .deco__etoile3 {
     position: absolute;
     top: 350px;
-    left: 950px;
+    left: 890px;
     z-index: -1;
 }
 
@@ -126,9 +144,10 @@ textarea {
     top: 450px;
     left: 90px;
     z-index: -1;
+    width: 50px;
 }
 
-.deco__etoile5 {
+.deco__nuage2 {
     position: absolute;
     top: 120px;
     left: 1300px;
@@ -139,12 +158,12 @@ textarea {
 
 .second_section{
     position: relative;
-    z-index: 2;
+    z-index: 4;
     background-color: var(--background-color2);
     margin-top: -100px;
     padding-top: 100px;
     height: 750px;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 50% 100%, 0 87%);
 }
 
 .firstsubtitle{
@@ -203,6 +222,7 @@ span{
 
 
 .third_section{
+    z-index: 3;
     position: relative;
     background-color: var(--background-color3);
     margin-top: -120px;
@@ -217,7 +237,6 @@ span{
     color: var(--white-color);
     font-size: 30px;
     margin-top: 50px;
-    margin-bottom:30px;
     text-align: center;
 }
 
@@ -260,15 +279,33 @@ span{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     background: var(--purple-color);
     border-radius: 50px;
     border: none;
     display: grid;
     place-content: center;
     color: var(--white-color);
-    font-size: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.carrousel__btn:hover {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background: var(--yellow-color);
+    border-radius: 50px;
+    border: none;
+    display: grid;
+    place-content: center;
+    color: var(--black-color);
+    font-size: 20px;
     cursor: pointer;
     margin-left: 20px;
     margin-right: 20px;
@@ -281,11 +318,11 @@ span{
 }
 
 .carrousel__btn--avant {
-    right : 70%;
+    right : 80%;
 }
 
 .carrousel__btn--apres {
-    left: 70%;
+    left: 80%;
 }
 
 .carrousel__content--question{
@@ -302,3 +339,155 @@ span{
     font-size: 15px;
     margin: 20px;
 }
+
+
+
+
+
+.fourth_section{
+    z-index: 2;
+    position: relative;
+    background-color: var(--background-color2);
+    margin-top: -120px;
+    padding-top: 120px;
+    height: 1050px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+}
+
+.contact__text{
+    font-family: var(--font-family1);
+    font-weight: 400;
+    color: var(--white-color);
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.contact__contenu{
+    display: flex;
+    flex-direction: column; /* Ajoutez cette ligne */
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.contact__contenu--texte{
+    font-family: var(--font-family2);
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+    color: var(--white-color);
+}
+
+input,
+textarea {
+    text-decoration: none;
+    background-color: var(--white-color); 
+    border-radius: 15px;
+    width: 500px;
+    padding : 10px;
+}
+
+.contact__btn{
+    text-decoration: none;
+    background-color: var(--purple-color);
+    color: var(--white-color);
+    text-align: center;
+    font-family: var(--font-family2);
+    font-size: 16px;
+    padding: 10px 31px; 
+    border-radius: 15px;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 30px;
+}
+
+.contact__btn:hover{
+    text-decoration: none;
+    background-color: var(--yellow-color);
+    color: var(--black-color);
+    text-align: center;
+    font-family: var(--font-family2);
+    font-size: 16px;
+    padding: 10px 31px; 
+    border-radius: 15px;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 30px;
+}
+
+.deco2 {
+    position: absolute;
+}
+
+.deco2__lune {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    z-index: -2;
+    width: 70px;
+}
+
+.deco2__nuage {
+    position: absolute;
+    top: 400px;
+    left: 120px;
+    z-index: -1;
+    width: 100px;
+}
+
+.deco2__nuage2 {
+    position: absolute;
+    top: 170px;
+    left: 1100px;
+    z-index: -1;
+}
+
+.deco2__etoile {
+    position: absolute;
+    top: 230px;
+    left: 300px;
+    z-index: -1;
+    width: 40px;
+}
+
+.deco2__etoile2 {
+    position: absolute;
+    top: 20px;
+    left: 1250px;
+    z-index: -1;
+    width: 30px;
+}
+
+.deco2__etoile3 {
+    position: absolute;
+    top: 350px;
+    left: 1400px;
+    z-index: -1;
+}
+
+
+.deco2__etoile4 {
+    position: absolute;
+    top: 550px;
+    left: 1150px;
+    z-index: -1;
+    width: 55px;
+}
+
+.deco2__etoile5 {
+    position: absolute;
+    top: 650px;
+    left: 400px;
+    z-index: -1;
+    width: 50px;
+}
+
